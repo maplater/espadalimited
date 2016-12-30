@@ -1,0 +1,149 @@
+<html>
+<head>
+
+
+<?php 
+echo $title;
+echo $meta_description;
+echo $meta_keywords;
+
+
+//$root = "/espadalimited/";
+$root ='/'; 
+
+
+session_start();
+?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="http://www.facebook.com/2008/fbml">
+            
+
+<meta property="og:title" content="Espada Limited">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://www.espadalimited.com">
+<meta property="og:image" content="http://www.espadalimited.com/images/gamegaloresplash.jpg">
+<meta property="og:site_name" content="Espada Limited">
+<meta property="og:fb:admins" content="1326120054">
+
+<meta property="og:description" content="Minimalist and vintage gaming designs.">
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js'></script>
+<meta name="google-site-verification" content="SfxrGFzEHUa8jQ2qhiIzRbDY3u0Td1Ih9q3XCNzlEIU" />
+<?php
+include_once('functions.php'); 
+?>
+<link rel="stylesheet" type="text/css" href="<?php echo $root . 'css/main.css'; ?>" />
+<link rel="stylesheet" type="text/css" href="<?php echo $root . 'css/shadowbox.css'; ?>" />
+
+<script src="<?php echo $root . "js/easySlider17.js"; ?>" type="text/javascript"></script>
+<script src="<?php echo $root . "js/shadowbox.js"; ?>" type="text/javascript"></script>
+<script type="text/javascript">
+Shadowbox.init({
+	handleOversize: "resize",
+	continuous:  true,
+	modal: true
+	
+});
+
+
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+	$("#slider").easySlider({
+		auto: true,
+		continuous: true,
+		speed: '1000',
+		pause: 8000,
+		controlsShow: false
+	});
+	$("#slider2").easySlider({
+		auto: true,
+		continuous: true,
+		speed: '1000',
+		pause: 2000,
+		controlsShow: false
+		
+		
+	});
+	$("#slider3").easySlider({
+		auto: true,
+		continuous: true,
+		speed: '1000',
+		pause: 6000,
+		controlsShow: false
+	});
+	$("#slider4").easySlider({
+		auto: true,
+		continuous: true,
+		speed: '1000',
+		pause: 4000,
+		controlsShow: false
+		
+		
+	});
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19635743-22']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+
+<div class="container">
+	<div class="header_container">
+		<table border="0">
+			<tr>
+				<td width="200">
+					<div class="header_title">
+						<a href="<?php echo $root . 'index.php'; ?>">Espada Limited</a>
+					</div>
+				</td>
+				<!--
+				<td width="100">
+					<div class="header_links">
+						<a href="<?php echo $root . 'door-desk.php'; ?>">Door Desk</a>
+					</div>
+				</td>	-->
+				<td>
+					<div class="header_links">
+						<a href="<?php echo $root . 'clothing.php'; ?>" title="Gaming T Shirts" >Minimalist & Vintage Gaming Shirts</a>
+					</div>
+				</td>
+				
+				<td width="150px" align="right">
+					<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+						<input type="hidden" name="cmd" value="_s-xclick">
+						<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+						">
+						<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_viewcart_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+						<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+					</form>
+
+				</td>
+				<td width="300px" align="right">
+					<form name="promocode" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+						Code: <input type="text" name="code" value="" />
+						
+						
+					</form>
+					<?php
+						if(!empty($code_message)){ echo $code_message;}
+						$code_message = NULL;
+					?>
+				</td>
+			</tr>	
+		</table>
+		<div class="underbar"></div>
